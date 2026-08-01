@@ -1,0 +1,6 @@
+module DataModel
+
+singleton CarColorProperties 1.0 CarColorProperties.qml
+singleton CarModelProperties 1.0 CarModelProperties.qml
+singleton Constants 1.0 Constants.qml
+singleton EnvironmentProperties 1.0 EnvironmentProperties.qml
