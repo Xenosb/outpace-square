@@ -1,0 +1,43 @@
+# Ignore Qt Creator files
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+*.qmake.cache
+**/*.qmlproject.user
+**/*.qmlproject.user.*
+**/*.qmlproject.qtds
+**/.DS*
+**.autosave
+**.qm
+
+# Ignore build directories
+**/build/
+.cache/
+# Dependencies/
+
+# Ignore CMake files (if using CMake)
+CMakeCache.txt
+CMakeLists.txt.*
+CMakeFiles/
+Makefile
+cmake_install.cmake
+CMakeLists.txt.user*
+
+# Ignore Qt specific generated files
+ui_*.h
+moc_*.cpp
+qrc_*.cpp
+qrc_*.h
+*.qmlc
+**/*_rc.py
+**.qmlls.ini
+
+# Other editors and IDEs
+.vscode
+.DS_Store
+.idea/
+**/.gradle/
+
+# Ignore IDE local configuration files
+**/local.properties
+*.env
