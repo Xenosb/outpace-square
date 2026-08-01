@@ -1,0 +1,4 @@
+module SelfieStick
+
+SelfieStick 1.0 SelfieStick.qml
+SelfieState 1.0 SelfieState.qml

@@ -3,6 +3,7 @@ import QtQuick3D
 
 import Car
 import Ground
+import SelfieStick
 
 Item {
     id: carView
@@ -81,10 +82,13 @@ Item {
             selfieStates: [
                 SelfieState {
                     id: ssMain
+
                     rotation: Qt.vector3d(1.9, 225, 0)
                     distance: 1511
                     fov: 25
+
                     lookAtNode: mainCar
+
                     rollMarginTop: 0
                     rollMarginBottom: 0
                 }

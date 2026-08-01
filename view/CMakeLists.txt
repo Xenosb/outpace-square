@@ -3,6 +3,7 @@ qt_add_library(View STATIC)
 add_subdirectory(Car)
 add_subdirectory(DataModel)
 add_subdirectory(Ground)
+add_subdirectory(SelfieStick)
 
 target_link_libraries(
     View
@@ -10,6 +11,7 @@ target_link_libraries(
         Car
         DataModel
         Ground
+        SelfieStick
 )
 
 qt6_add_qml_module(
@@ -21,6 +23,4 @@ qt6_add_qml_module(
         "App.qml"
         "CarView.ui.qml"
         "Service.qml"
-        "SelfieState.qml"
-        "SelfieStick.qml"
 )

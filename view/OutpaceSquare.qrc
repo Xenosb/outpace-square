@@ -38,8 +38,9 @@
         <file>Ground/qmldir</file>
         <file>OutpaceSquare.qmlproject</file>
         <file>qtquickcontrols2.conf</file>
-        <file>SelfieState.qml</file>
-        <file>SelfieStick.qml</file>
+        <file>SelfieStick/qmldir</file>
+        <file>SelfieStick/SelfieState.qml</file>
+        <file>SelfieStick/SelfieStick.qml</file>
         <file>Service.qml</file>
     </qresource>
 </RCC>
