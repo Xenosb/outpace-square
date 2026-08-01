@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto">
+
+    <!-- %%INSERT_PERMISSIONS -->
+    <!-- %%INSERT_FEATURES -->
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <permission
+        android:name="io.qt.demo.outpace.square.PERMISSION_BIND_SERVICE"
+        android:protectionLevel="normal"
+    />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+    />
+
+    <application
+        android:name="org.qtproject.qt.android.bindings.QtApplication"
+        android:hardwareAccelerated="true"
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:fullBackupOnly="false"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:extractNativeLibs="true"
+        android:label="-- %%INSERT_APP_NAME%% --"
+        android:icon="-- %%INSERT_APP_ICON%% --" >
+
+        <meta-data android:name="android.supports_size_changes" android:value="false" />
+        <meta-data android:name="android.resizeable_activity" android:value="false" />
+
+        <activity
+            android:name="io.qt.demo.outpace.square.MainActivity"
+            android:resizeableActivity="true"
+            android:exported="true"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:hardwareAccelerated="true"
+            android:keepScreenOn="true"
+            android:launchMode="singleTask"
+            android:label="-- %%INSERT_APP_NAME%% --" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="io.qt.demo.outpace.square.RenderingService"
+            android:exported="true"
+            android:enabled="true"
+            android:permission="io.qt.demo.outpace.square.PERMISSION_BIND_SERVICE">
+
+            <intent-filter>
+                <action android:name="io.qt.demo.outpace.square.IRenderingService" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>
