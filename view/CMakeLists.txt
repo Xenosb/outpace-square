@@ -2,12 +2,14 @@ qt_add_library(View STATIC)
 
 add_subdirectory(Car)
 add_subdirectory(DataModel)
+add_subdirectory(Ground)
 
 target_link_libraries(
     View
     PRIVATE
         Car
         DataModel
+        Ground
 )
 
 qt6_add_qml_module(

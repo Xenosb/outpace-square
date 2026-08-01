@@ -2,14 +2,17 @@ import QtQuick
 import QtQuick3D
 
 import Car
+import Ground
 
 Item {
     id: carView
 
     SceneEnvironment {
         id: sceneEnvironment
+
         backgroundMode: SceneEnvironment.Color
         clearColor: "#e2e5f0"
+
         antialiasingMode: SceneEnvironment.MSAA
         antialiasingQuality: SceneEnvironment.High
     }
@@ -21,18 +24,26 @@ Item {
             id: mainCar
         }
 
+        Ground {
+            id: ground
+        }
+
         DirectionalLight {
             id: keyLight
+
             eulerRotation.x: -35
             eulerRotation.y: -55
+
             brightness: 1.2
             color: "#ffffff"
         }
 
         DirectionalLight {
             id: fillLight
+
             eulerRotation.x: -20
             eulerRotation.y: 135
+
             brightness: 0.5
             color: "#ffffff"
         }
@@ -40,7 +51,9 @@ Item {
 
     View3D {
         id: view3D_Main
+
         anchors.fill: parent
+
         environment: sceneEnvironment
         importScene: scene3d
         camera: cameraMain
@@ -56,10 +69,13 @@ Item {
 
         SelfieStick {
             id: cameraController
+
             anchors.fill: parent
+
             camera: cameraMain
             origin: orbitOrigin
             view3d: view3D_Main
+
             selfieState: ssMain
 
             selfieStates: [

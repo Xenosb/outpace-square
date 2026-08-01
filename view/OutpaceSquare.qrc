@@ -34,6 +34,8 @@
         <file>DataModel/Constants.qml</file>
         <file>DataModel/EnvironmentProperties.qml</file>
         <file>DataModel/qmldir</file>
+        <file>Ground/Ground.qml</file>
+        <file>Ground/qmldir</file>
         <file>OutpaceSquare.qmlproject</file>
         <file>qtquickcontrols2.conf</file>
         <file>SelfieState.qml</file>
