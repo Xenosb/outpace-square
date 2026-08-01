@@ -34,7 +34,11 @@
         <file>DataModel/Constants.qml</file>
         <file>DataModel/EnvironmentProperties.qml</file>
         <file>DataModel/qmldir</file>
+        <file>Ground/AsphaltMaterial.qml</file>
         <file>Ground/Ground.qml</file>
+        <file>Ground/maps/asphalt_normal.png</file>
+        <file>Ground/maps/asphalt_opacity.png</file>
+        <file>Ground/maps/asphalt_roughness.png</file>
         <file>Ground/qmldir</file>
         <file>OutpaceSquare.qmlproject</file>
         <file>qtquickcontrols2.conf</file>

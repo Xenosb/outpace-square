@@ -1,4 +1,7 @@
+import QtQuick
 import QtQuick3D
+
+import DataModel
 
 Model {
     id: root
@@ -11,8 +14,11 @@ Model {
     scale.y: 0
     scale.z: 30
 
-    materials: PrincipledMaterial {
-        baseColor: "#d8d8d8"
-        roughness: 0.9
+    materials: AsphaltMaterial {
+        baseColor: EnvironmentProperties.dayNightMode ? "#141414" : "#2a2a2a"
+
+        Behavior on baseColor {
+            ColorAnimation { duration: 600 }
+        }
     }
 }
