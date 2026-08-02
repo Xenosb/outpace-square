@@ -17,8 +17,8 @@ Item {
         probeExposure: 0.45
         tonemapMode: SceneEnvironment.TonemapModeAces
 
-        antialiasingMode: SceneEnvironment.MSAA
-        antialiasingQuality: SceneEnvironment.High
+        antialiasingMode: SceneEnvironment.ProgressiveAA
+        antialiasingQuality: SceneEnvironment.VeryHigh
     }
 
     Node {
@@ -42,17 +42,16 @@ Item {
             materials: PrincipledMaterial {
                 objectName: "glass_dark"
 
-                opacity: 0.9
                 roughness: 0.26
                 clearcoatAmount: 1
                 clearcoatFresnelScale: 1
                 clearcoatRoughnessAmount: 0.1
 
-                baseColor: "#fa000000"
+                baseColor: "#000000"
 
                 depthDrawMode: Material.AlwaysDepthDraw
                 cullMode: Material.BackFaceCulling
-                alphaMode: PrincipledMaterial.Blend
+                alphaMode: PrincipledMaterial.Opaque
             }
         }
 
