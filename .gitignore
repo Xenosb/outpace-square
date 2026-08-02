@@ -11,7 +11,7 @@
 **.qm
 
 # Ignore build directories
-**/build/
+**/build*
 .cache/
 # Dependencies/
 

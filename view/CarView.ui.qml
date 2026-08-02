@@ -10,11 +10,10 @@ import Sky
 Item {
     id: carView
 
-    SceneEnvironment {
+    SkyEnvironment {
         id: sceneEnvironment
 
-        backgroundMode: SceneEnvironment.SkyMaterial
-        skyMaterial: advancedSky
+        skyLight: sun
 
         probeExposure: 0.45
         tonemapMode: SceneEnvironment.TonemapModeAces
@@ -92,11 +91,6 @@ Item {
             Behavior on eulerRotation.x {
                 NumberAnimation { duration: 2000; easing.type: Easing.InOutQuad }
             }
-        }
-
-        AdvancedSky {
-            id: advancedSky
-            skyLight: sun
         }
 
         SelfieStick {

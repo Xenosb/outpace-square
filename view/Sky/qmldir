@@ -1,3 +1,10 @@
 module Sky
 
-AdvancedSky 1.0 AdvancedSky.qml
+# This file is only used by tools that read the source tree directly (Qt
+# Design Studio's live preview, qmlls) — the actual CMake build generates its
+# own qmldir that picks modern/ or legacy/ based on the Qt version being
+# built against (see CMakeLists.txt). Point this at whichever variant your
+# Design Studio Qt kit actually supports: modern/SkyEnvironment.qml requires
+# Qt 6.12+ (SkyMaterial); legacy/SkyEnvironment.qml works on any Qt 6
+# version.
+SkyEnvironment 1.0 legacy/SkyEnvironment.qml

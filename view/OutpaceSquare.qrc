@@ -46,10 +46,13 @@
         <file>SelfieStick/SelfieState.qml</file>
         <file>SelfieStick/SelfieStick.qml</file>
         <file>Service.qml</file>
-        <file>Sky/advancedsky.frag</file>
-        <file>Sky/AdvancedSky.qml</file>
+        <file>Sky/legacy/maps/MorningSkyHDRI014B_2K_TONEMAPPED.jpg</file>
+        <file>Sky/legacy/SkyEnvironment.qml</file>
+        <file>Sky/modern/advancedsky.frag</file>
+        <file>Sky/modern/AdvancedSky.qml</file>
+        <file>Sky/modern/SkyEnvironment.qml</file>
+        <file>Sky/modern/skytexture.frag</file>
+        <file>Sky/modern/transmittance.frag</file>
         <file>Sky/qmldir</file>
-        <file>Sky/skytexture.frag</file>
-        <file>Sky/transmittance.frag</file>
     </qresource>
 </RCC>
