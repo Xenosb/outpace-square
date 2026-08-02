@@ -46,5 +46,10 @@
         <file>SelfieStick/SelfieState.qml</file>
         <file>SelfieStick/SelfieStick.qml</file>
         <file>Service.qml</file>
+        <file>Sky/advancedsky.frag</file>
+        <file>Sky/AdvancedSky.qml</file>
+        <file>Sky/qmldir</file>
+        <file>Sky/skytexture.frag</file>
+        <file>Sky/transmittance.frag</file>
     </qresource>
 </RCC>

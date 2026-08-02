@@ -4,6 +4,7 @@ add_subdirectory(Car)
 add_subdirectory(DataModel)
 add_subdirectory(Ground)
 add_subdirectory(SelfieStick)
+add_subdirectory(Sky)
 
 target_link_libraries(
     View
@@ -12,6 +13,7 @@ target_link_libraries(
         DataModel
         Ground
         SelfieStick
+        Sky
 )
 
 qt6_add_qml_module(

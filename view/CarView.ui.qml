@@ -2,8 +2,10 @@ import QtQuick
 import QtQuick3D
 
 import Car
+import DataModel
 import Ground
 import SelfieStick
+import Sky
 
 Item {
     id: carView
@@ -11,8 +13,11 @@ Item {
     SceneEnvironment {
         id: sceneEnvironment
 
-        backgroundMode: SceneEnvironment.Color
-        clearColor: "#e2e5f0"
+        backgroundMode: SceneEnvironment.SkyMaterial
+        skyMaterial: advancedSky
+
+        probeExposure: 0.45
+        tonemapMode: SceneEnvironment.TonemapModeAces
 
         antialiasingMode: SceneEnvironment.MSAA
         antialiasingQuality: SceneEnvironment.High
@@ -35,7 +40,7 @@ Item {
             eulerRotation.x: -35
             eulerRotation.y: -55
 
-            brightness: 1.2
+            brightness: 2.0
             color: "#ffffff"
         }
 
@@ -45,8 +50,18 @@ Item {
             eulerRotation.x: -20
             eulerRotation.y: 135
 
-            brightness: 0.5
+            brightness: 1.0
             color: "#ffffff"
+        }
+
+        DirectionalLight {
+            id: rimLight
+
+            eulerRotation.x: -55
+            eulerRotation.y: 20
+
+            brightness: 1.2
+            color: "#eaf2ff"
         }
     }
 
@@ -66,6 +81,22 @@ Item {
 
         PerspectiveCamera {
             id: cameraMain
+        }
+
+        Node {
+            id: sun
+
+            eulerRotation.x: -80 // EnvironmentProperties.dayNightMode ? -180 : -80
+            eulerRotation.y: -55
+
+            Behavior on eulerRotation.x {
+                NumberAnimation { duration: 2000; easing.type: Easing.InOutQuad }
+            }
+        }
+
+        AdvancedSky {
+            id: advancedSky
+            skyLight: sun
         }
 
         SelfieStick {
