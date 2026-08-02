@@ -3,7 +3,6 @@ import QtQuick3D
 
 import Car
 import DataModel
-import Ground
 import SelfieStick
 import Sky
 
@@ -29,8 +28,32 @@ Item {
             id: mainCar
         }
 
-        Ground {
+        Model {
             id: ground
+
+            source: "#Cylinder"
+
+            y: -63
+
+            scale.x: 30
+            scale.y: 0
+            scale.z: 30
+
+            materials: PrincipledMaterial {
+                objectName: "glass_dark"
+
+                opacity: 0.9
+                roughness: 0.26
+                clearcoatAmount: 1
+                clearcoatFresnelScale: 1
+                clearcoatRoughnessAmount: 0.1
+
+                baseColor: "#fa000000"
+
+                depthDrawMode: Material.AlwaysDepthDraw
+                cullMode: Material.BackFaceCulling
+                alphaMode: PrincipledMaterial.Blend
+            }
         }
 
         DirectionalLight {
@@ -80,6 +103,14 @@ Item {
 
         PerspectiveCamera {
             id: cameraMain
+
+            x: -1074.696
+            y: 209.282
+            z: -1074.69641
+
+            eulerRotation.z: 0
+            eulerRotation.y: -135
+            eulerRotation.x: -5.69067
         }
 
         Node {
@@ -89,7 +120,10 @@ Item {
             eulerRotation.y: -55
 
             Behavior on eulerRotation.x {
-                NumberAnimation { duration: 2000; easing.type: Easing.InOutQuad }
+                NumberAnimation {
+                    duration: 2000
+                    easing.type: Easing.InOutQuad
+                }
             }
         }
 
@@ -108,8 +142,8 @@ Item {
                 SelfieState {
                     id: ssMain
 
-                    rotation: Qt.vector3d(1.9, 225, 0)
-                    distance: 1511
+                    rotation: Qt.vector3d(-4.113, 225, 0)
+                    distance: 1523.77
                     fov: 25
 
                     lookAtNode: mainCar
@@ -120,11 +154,16 @@ Item {
             ]
         }
     }
+
+    Item {
+        id: __materialLibrary__
+    }
 }
 
 /*##^##
 Designer {
-    D{i:0}D{i:2;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}D{i:6;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}
+    D{i:0;matPrevEnvDoc:"SkyBox";matPrevEnvValueDoc:"preview_landscape"}D{i:2;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}
+D{i:7;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}D{i:10;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}
 }
 ##^##*/
 

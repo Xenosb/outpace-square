@@ -761,9 +761,9 @@ Node {
             metalness: 0.3
             objectName: "m_light_white"
             baseColor: "#4c4c4c"
-            emissiveFactor.x: CarModelProperties.lightsMain ? 10 : 0
-            emissiveFactor.y: CarModelProperties.lightsMain ? 10 : 0
-            emissiveFactor.z: CarModelProperties.lightsMain ? 10 : 0
+            emissiveFactor.x: 10
+            emissiveFactor.y: 10
+            emissiveFactor.z: 10
             alphaMode: PrincipledMaterial.Opaque
         }
 

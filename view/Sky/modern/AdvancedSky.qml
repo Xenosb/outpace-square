@@ -12,9 +12,9 @@ SkyMaterial {
 
     required property Node skyLight
     fragmentShader: "advancedsky.frag"
-    iblSampleCount: 128
+    iblSampleCount: 256
 
-    property int lutSize: 128
+    property int lutSize: 512
     property int lutSizeTransmit: 128
 
     property real aerosolBaseDensity: 1.3681e20

@@ -32,57 +32,5 @@ qt_standard_project_setup()
 
 qt_policy(SET QTP0001 NEW)
 
-add_subdirectory(src)
 add_subdirectory(View)
-
-qt_add_resources(
-    ${CMAKE_PROJECT_NAME} "configuration"
-    PREFIX "/"
-    FILES
-        view/qtquickcontrols2.conf
-)
-
-include(cmake/qmlcomponents.cmake)
-
-target_link_libraries(
-    ${CMAKE_PROJECT_NAME}
-    PRIVATE
-        Qt::Core
-        Qt::Gui
-        Qt::Widgets
-        Qt::Quick
-        Qt::Qml
-        Viewplugin
-        DataModelplugin
-)
-
-if(CMAKE_SYSTEM_NAME STREQUAL "Android")
-    find_package(
-        Qt6 REQUIRED COMPONENTS
-            AndroidAutomotiveService
-    )
-
-    qt_import_plugins(
-        ${CMAKE_PROJECT_NAME}
-        INCLUDE
-            Qt6::QAndroidRaaSIntegrationPlugin
-    )
-
-    target_link_libraries(
-        ${CMAKE_PROJECT_NAME}
-        PRIVATE
-            Qt6::AndroidAutomotiveService
-    )
-
-    set_target_properties(
-        ${PROJECT_NAME}
-        PROPERTIES
-            QT_ANDROID_PACKAGE_NAME io.qt.demo.outpace.square
-            QT_ANDROID_APP_NAME "Outpace Square"
-            QT_ANDROID_VERSION_CODE "1"
-            QT_ANDROID_VERSION_NAME "1.0"
-            QT_ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android"
-    )
-endif()
-
-qt_finalize_executable(${CMAKE_PROJECT_NAME})
+add_subdirectory(src)

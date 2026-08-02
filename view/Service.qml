@@ -1,6 +1,6 @@
 import QtQuick
 
-import OutpaceSquare
+import DataModel
 
 Item {
     id: root

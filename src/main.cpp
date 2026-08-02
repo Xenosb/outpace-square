@@ -3,6 +3,10 @@
 
 #include "environment.h"
 
+#ifdef __ANDROID__
+#include <QtAndroidAutomotiveService>
+#endif
+
 int main(int argc, char *argv[])
 {
     set_qt_environment();
@@ -12,7 +16,6 @@ int main(int argc, char *argv[])
 #ifdef __ANDROID__
 
     QAndroidRaaSApplication app(argc, argv);
-    setSustainedPerformanceMode(app);
 
     QAndroidSurfaceRenderEngine *engine = new QAndroidSurfaceRenderEngine();
 

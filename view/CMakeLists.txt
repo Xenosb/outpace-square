@@ -2,7 +2,6 @@ qt_add_library(View STATIC)
 
 add_subdirectory(Car)
 add_subdirectory(DataModel)
-add_subdirectory(Ground)
 add_subdirectory(SelfieStick)
 add_subdirectory(Sky)
 
@@ -11,7 +10,6 @@ target_link_libraries(
     PRIVATE
         Car
         DataModel
-        Ground
         SelfieStick
         Sky
 )

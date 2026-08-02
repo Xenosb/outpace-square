@@ -1,14 +1,16 @@
 import QtQuick3D
+import QtQuick3D.Helpers
 
-SceneEnvironment {
+ExtendedSceneEnvironment {
     id: root
 
     property Node skyLight
 
     backgroundMode: SceneEnvironment.SkyBox
+    ditheringEnabled: true
 
     lightProbe: Texture {
-        source: "legacy/maps/MorningSkyHDRI014B_2K_TONEMAPPED.jpg"
+        source: "maps/morning_sky.jpg"
         mappingMode: Texture.Environment
     }
 }
