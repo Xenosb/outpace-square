@@ -9,6 +9,7 @@ ExtendedSceneEnvironment {
     property Node skyLight
 
     backgroundMode: SceneEnvironment.SkyMaterial
+    ssrEnabled: true
 
     skyMaterial: AdvancedSky {
         skyLight: root.skyLight
