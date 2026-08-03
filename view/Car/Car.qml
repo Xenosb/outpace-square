@@ -169,6 +169,8 @@ Node {
                     scale.y: 10
                     scale.z: 10
 
+                    castsReflections: true
+
                     source: "meshes/door_front_left_mesh.mesh"
                     materials: [plasticGlossy_material,glass_dark_material,m_carpaint1_material,m_chrome_material,m_plasticblack_rough_material,turnSignal_Left_material,basic_interior]
                 }
@@ -185,6 +187,8 @@ Node {
                     scale.z: 1.1
                     scale.y: 1.1
                     scale.x: 1.1
+
+                    castsReflections: true
 
                     source: "meshes/window_front_left_mesh.mesh"
 
@@ -249,6 +253,8 @@ Node {
                     scale.y: 10
                     scale.z: 10
 
+                    castsReflections: true
+
                     source: "meshes/door_front_right_mesh.mesh"
                     materials: [m_chrome_material,plasticGlossy_material,m_plasticblack_rough_material,glass_dark_material,m_carpaint1_material,turnSignal_Right_material,basic_interior]
                 }
@@ -302,6 +308,8 @@ Node {
 
                         eulerRotation.x: 90
 
+                        castsReflections: true
+
                         source: "meshes/window_front_right_mesh.mesh"
                         materials: [glass_dark_material]
                     }
@@ -335,6 +343,8 @@ Node {
                     scale.y: 10
                     scale.z: 10
 
+                    castsReflections: true
+
                     source: "meshes/door_rear_left_mesh.mesh"
 
                     materials: [
@@ -357,6 +367,8 @@ Node {
                     scale.z: 1.1
                     scale.y: 1.1
                     scale.x: 1.1
+
+                    castsReflections: true
 
                     source: "meshes/window_rear_left_mesh.mesh"
 
@@ -421,6 +433,8 @@ Node {
                     scale.y: 10
                     scale.z: 10
 
+                    castsReflections: true
+
                     source: "meshes/door_rear_right_mesh.mesh"
 
                     materials: [
@@ -439,6 +453,8 @@ Node {
                     z: CarModelProperties.windowRearRightMinZ + (CarModelProperties.windowRearRightMaxZ - CarModelProperties.windowRearRightMinZ) * CarModelProperties.windowRearRightCurrentPosition
 
                     eulerRotation.z: CarModelProperties.windowRearRightMinRotationZ +(CarModelProperties.windowRearRightMaxRotationZ - CarModelProperties.windowRearRightMinRotationZ)* CarModelProperties.windowRearRightCurrentPosition
+
+                    castsReflections: true
 
                     source: "meshes/window_rear_right_mesh.mesh"
 
@@ -491,6 +507,8 @@ Node {
                 Model {
                     objectName: "body_shell"
 
+                    castsReflections: true
+
                     source: "meshes/body_shell_mesh.mesh"
 
                     materials: [
@@ -516,6 +534,8 @@ Node {
                 Model {
                     objectName: "exterior_glass"
 
+                    castsReflections: true
+
                     source: "meshes/exterior_glass_mesh.mesh"
                     materials: [
                         m_glass_clear_material
@@ -536,6 +556,7 @@ Node {
                         y: -172.09103393554688
                         z: 174.06906127929688
 
+                        castsReflections: true
                         source: "meshes/tailgate_mesh.mesh"
                         materials: [
                             plasticGlossy_material,
@@ -574,6 +595,8 @@ Node {
                 scale.y: 10
                 scale.z: 10
 
+                castsReflections: true
+
                 source: "meshes/brake_caliper_front_left_mesh.mesh"
                 materials: [
                     m_chrome_material
@@ -594,6 +617,8 @@ Node {
                 scale.x: 10
                 scale.y: 10
                 scale.z: 10
+
+                castsReflections: true
 
                 source: "meshes/tire_front_mesh.mesh"
                 materials: [
@@ -627,6 +652,8 @@ Node {
                 scale.y: 10
                 scale.z: 10
 
+                castsReflections: true
+
                 source: "meshes/brake_caliper_front_right_mesh.mesh"
                 materials: [
                     m_chrome_material
@@ -646,6 +673,8 @@ Node {
                 scale.x: 10
                 scale.y: 10
                 scale.z: 10
+
+                castsReflections: true
 
                 source: "meshes/tire_front_mesh.mesh"
                 materials: [
@@ -679,6 +708,8 @@ Node {
                 scale.y: 10
                 scale.z: 10
 
+                castsReflections: true
+
                 source: "meshes/brake_caliper_rear_left_mesh.mesh"
                 materials: [
                     m_chrome_material,
@@ -700,6 +731,8 @@ Node {
                 scale.x: 10
                 scale.y: 10
                 scale.z: 10
+
+                castsReflections: true
 
                 source: "meshes/tire_rear_mesh.mesh"
                 materials: [
@@ -733,6 +766,8 @@ Node {
                 scale.y: 10
                 scale.z: 10
 
+                castsReflections: true
+
                 source: "meshes/brake_caliper_rear_right_mesh.mesh"
                 materials: [
                     m_chrome_material,
@@ -753,6 +788,8 @@ Node {
                 scale.x: 10
                 scale.y: 10
                 scale.z: 10
+
+                castsReflections: true
 
                 source: "meshes/tire_rear_mesh.mesh"
                 materials: [

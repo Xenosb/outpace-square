@@ -43,6 +43,8 @@ Item {
 
             source: "#Cylinder"
 
+            receivesReflections: true
+
             y: -63
 
             scale.x: 30
@@ -52,10 +54,10 @@ Item {
             materials: PrincipledMaterial {
                 objectName: "glass_dark"
 
-                roughness: 0.46
-                clearcoatAmount: 1.2
-                clearcoatFresnelScale: 1.7
-                clearcoatRoughnessAmount: 0.2
+                // roughness: 0.46
+                // clearcoatAmount: 1.2
+                // clearcoatFresnelScale: 1.7
+                // clearcoatRoughnessAmount: 0.2
 
                 baseColor: "#000000"
             }
@@ -104,6 +106,21 @@ Item {
         Node {
             id: orbitOrigin
             y: 100
+        }
+
+        ReflectionProbe {
+            id: reflectionProbe
+
+            position: Qt.vector3d(0, 37, 0)
+            boxSize: Qt.vector3d(200, 200, 500)
+            boxOffset: Qt.vector3d(0, -200, 0)
+
+            parallaxCorrection: true
+            quality: ReflectionProbe.Low
+            refreshMode: ReflectionProbe.EveryFrame
+            timeSlicing: ReflectionProbe.AllFacesAtOnce
+
+            debugView: true
         }
 
         PerspectiveCamera {
