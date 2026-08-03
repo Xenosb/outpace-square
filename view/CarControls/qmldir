@@ -1,0 +1,10 @@
+module CarControls
+
+CarControls 1.0 CarControls.ui.qml
+CarControlIcon 1.0 CarControlIcon.ui.qml
+CarControlSelector 1.0 CarControlSelector.ui.qml
+CarControlMenu 1.0 CarControlMenu.ui.qml
+CarControlBackground 1.0 CarControlBackground.ui.qml
+CarSuspensionMenu 1.0 CarSuspensionMenu.ui.qml
+IconMapper 1.0 IconMapper.qml
+SpringReturnSlider 1.0 SpringReturnSlider.qml

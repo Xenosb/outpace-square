@@ -207,5 +207,33 @@ Item {
 
     property bool turnSignalLeft
     property bool turnSignalRight
+
+    // ======================================================
+    // Lights
+    // ======================================================
+
+    property bool lightsMain
+    property bool lightsHighBeam
+    property bool lightsBrakeLight
+
+    Connections {
+        target: root
+        function onLightsMainChanged() {
+            if (!root.lightsMain)
+                root.lightsHighBeam = false
+        }
+        function onLightsHighBeamChanged() {
+            if (root.lightsHighBeam)
+                root.lightsMain = true
+        }
+    }
+
+    // ======================================================
+    // Suspension
+    // ======================================================
+
+    property real suspensionPosition: 0
+    property real suspensionMin: 0
+    property real suspensionMax: 50
 }
 

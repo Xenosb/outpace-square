@@ -9,10 +9,6 @@ ExtendedSceneEnvironment {
     property Node skyLight
 
     backgroundMode: SceneEnvironment.SkyMaterial
-    ssrEnabled: true
-    ssrThickness: 100
-    ssrMaxSteps: 100
-    ditheringEnabled: true
 
     skyMaterial: AdvancedSky {
         skyLight: root.skyLight

@@ -8,6 +8,16 @@ Node {
 
     property real wheelAngle: 0
 
+    property alias windowsLeft: windowsLeft
+    property alias windowsRight: windowsRight
+    property alias trunk: trunk
+    property alias headlights: headlights
+    property alias suspension_Pos: suspensionPos
+    property alias door_FL: door_FL_pos
+    property alias door_FR: door_FR_pos
+    property alias door_RL: door_RL_pos
+    property alias door_RR: door_RR_pos
+
     property color carColor: CarColorProperties.carPaintColor
 
     // Texture map sources
@@ -37,6 +47,74 @@ Node {
 
             source: "meshes/seats_mesh.mesh"
             materials: [basic_interior, basic_interior, seat2_material]
+        }
+    }
+
+    // Anchor points for CarControls icon overlay placement / occlusion picking
+    Node {
+        id: staticPositions
+
+        Node {
+            id: windowsLeft
+            x: -85
+            y: 90
+            z: 30
+        }
+
+        Node {
+            id: windowsRight
+            x: 85
+            y: 90
+            z: 30
+        }
+
+        Node {
+            id: headlights
+            x: 0
+            y: 40
+            z: -250
+        }
+
+        Node {
+            id: trunk
+            x: 0
+            y: 50
+            z: 280
+        }
+
+        Node {
+            id: door_FL_pos
+            x: -100
+            y: 20
+            z: -30
+        }
+
+        Node {
+            id: door_RL_pos
+            x: -100
+            y: 20
+            z: 60
+        }
+
+        Node {
+            id: door_FR_pos
+            x: 100
+            y: 20
+            z: -30
+        }
+
+        Node {
+            id: door_RR_pos
+            x: 100
+            y: 20
+            z: 60
+        }
+
+        Node {
+            id: suspensionPos
+            x: -100
+            y: -40
+            z: -250
         }
     }
 

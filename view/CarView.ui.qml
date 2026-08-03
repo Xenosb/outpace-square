@@ -2,6 +2,8 @@ import QtQuick
 import QtQuick3D
 
 import Car
+import CarControls
+import CarHitbox
 import DataModel
 import SelfieStick
 import Sky
@@ -28,6 +30,14 @@ Item {
             id: mainCar
         }
 
+        CarHitbox {
+            id: hitbox
+
+            eulerRotation: mainCar.eulerRotation
+            y: -60
+            layers: mainCar.layers
+        }
+
         Model {
             id: ground
 
@@ -42,16 +52,12 @@ Item {
             materials: PrincipledMaterial {
                 objectName: "glass_dark"
 
-                roughness: 0.26
-                clearcoatAmount: 1
-                clearcoatFresnelScale: 1
-                clearcoatRoughnessAmount: 0.1
+                roughness: 0.46
+                clearcoatAmount: 1.2
+                clearcoatFresnelScale: 1.7
+                clearcoatRoughnessAmount: 0.2
 
                 baseColor: "#000000"
-
-                depthDrawMode: Material.AlwaysDepthDraw
-                cullMode: Material.BackFaceCulling
-                alphaMode: PrincipledMaterial.Opaque
             }
         }
 
@@ -151,6 +157,15 @@ Item {
                     rollMarginBottom: 0
                 }
             ]
+        }
+
+        CarControls {
+            id: carControls
+
+            view3D_Car: view3D_Main
+            mainCar: mainCar
+            hitbox: hitbox
+            open: true
         }
     }
 

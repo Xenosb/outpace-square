@@ -7,7 +7,6 @@ ExtendedSceneEnvironment {
     property Node skyLight
 
     backgroundMode: SceneEnvironment.SkyBox
-    ditheringEnabled: true
 
     lightProbe: Texture {
         source: "maps/morning_sky.jpg"

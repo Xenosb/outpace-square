@@ -1,6 +1,6 @@
 qt_add_library(Sky STATIC)
 
-option(ADVANCED_SKY "Use dynamic sky" TRUE)
+option(ADVANCED_SKY "Use dynamic sky" FALSE)
 
 target_link_libraries(
     Sky
