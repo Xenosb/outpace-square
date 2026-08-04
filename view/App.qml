@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Controls.Material
+import QtQuick3D.Helpers
 
 import DataModel
 
@@ -27,5 +28,17 @@ ApplicationWindow {
         anchors.margins: 12
 
         width: 260
+
+        visible: false
+    }
+
+    DebugView {
+        anchors.top: parent.top
+        anchors.left: parent.left
+        anchors.margins: 12
+
+        source: mainScreen.view
+
+        visible: false
     }
 }
