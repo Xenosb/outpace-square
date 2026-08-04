@@ -19,11 +19,7 @@ Item {
         probeExposure: 0.45
         tonemapMode: SceneEnvironment.TonemapModeAces
 
-        // antialiasingMode: SceneEnvironment.ProgressiveAA
-        // temporalAAEnabled: true
-        // temporalAAMode: SceneEnvironment.TAAMotionVector
-        // temporalAAStrength: 0.6
-        antialiasingQuality: SceneEnvironment.VeryHigh
+        antialiasingMode: SceneEnvironment.ProgressiveAA
     }
 
     Node {
@@ -123,7 +119,7 @@ Item {
         Node {
             id: sun
 
-            eulerRotation.x: -80 // EnvironmentProperties.dayNightMode ? -180 : -80
+            eulerRotation.x: EnvironmentProperties.dayNightMode ? -180 : -80
             eulerRotation.y: -55
 
             Behavior on eulerRotation.x {

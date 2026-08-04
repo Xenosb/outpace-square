@@ -9,8 +9,6 @@ Node {
     property real wheelAngle: 0
 
     component ReflectionMaterial : CustomMaterial {
-        // Opaque: the fade dissolves in-shader into the same analytic floor
-        // color that ReflectionFloor renders, so no blending pass is needed.
         sourceBlend: CustomMaterial.NoBlend
         destinationBlend: CustomMaterial.NoBlend
         sourceAlphaBlend: CustomMaterial.NoBlend
@@ -38,6 +36,7 @@ Node {
                 mipFilter: Texture.Linear
             }
         }
+
         property real reflectionGroundTransmission: EnvironmentProperties.reflectionGroundTransmission
         property real reflectionFadeEndY: EnvironmentProperties.reflectionFadeEndY
         property real groundPlaneY: EnvironmentProperties.reflectionPlaneY
@@ -47,7 +46,8 @@ Node {
         property real floorHighlightInnerRadius: EnvironmentProperties.reflectionFloorHighlightInnerRadius
         property real floorHighlightOuterRadius: EnvironmentProperties.reflectionFloorHighlightOuterRadius
         property real skyReflectionStrength: EnvironmentProperties.reflectionFloorSkyStrength
-        property real skyReflectionBlur: EnvironclaudementProperties.reflectionFloorSkyBlur
+        property real skyReflectionBlur: EnvironmentProperties.reflectionFloorSkyBlur
+
         property TextureInput skyTexture: TextureInput {
             texture: Texture {
                 source: "qrc:/qt/qml/Sky/legacy/maps/morning_sky.jpg"
