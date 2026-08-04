@@ -19,7 +19,10 @@ Item {
         probeExposure: 0.45
         tonemapMode: SceneEnvironment.TonemapModeAces
 
-        antialiasingMode: SceneEnvironment.ProgressiveAA
+        // antialiasingMode: SceneEnvironment.ProgressiveAA
+        // temporalAAEnabled: true
+        // temporalAAMode: SceneEnvironment.TAAMotionVector
+        // temporalAAStrength: 0.6
         antialiasingQuality: SceneEnvironment.VeryHigh
     }
 
@@ -30,6 +33,24 @@ Item {
             id: mainCar
         }
 
+        // Mirror image of the car below the ground plane. The 180 degree
+        ReflectionCar {
+            id: carReflection
+
+            visible: EnvironmentProperties.reflectionVisible
+
+            x: mainCar.x
+            y: 2 * EnvironmentProperties.reflectionPlaneY - mainCar.y
+            z: mainCar.z
+
+            scale: mainCar.scale
+            eulerRotation: Qt.vector3d(-mainCar.eulerRotation.x,
+                                       mainCar.eulerRotation.y,
+                                       180 - mainCar.eulerRotation.z)
+
+            wheelAngle: mainCar.wheelAngle
+        }
+
         CarHitbox {
             id: hitbox
 
@@ -38,29 +59,8 @@ Item {
             layers: mainCar.layers
         }
 
-        Model {
+        ReflectionFloor {
             id: ground
-
-            source: "#Cylinder"
-
-            receivesReflections: true
-
-            y: -63
-
-            scale.x: 30
-            scale.y: 0
-            scale.z: 30
-
-            materials: PrincipledMaterial {
-                objectName: "glass_dark"
-
-                // roughness: 0.46
-                // clearcoatAmount: 1.2
-                // clearcoatFresnelScale: 1.7
-                // clearcoatRoughnessAmount: 0.2
-
-                baseColor: "#000000"
-            }
         }
 
         DirectionalLight {
@@ -106,21 +106,6 @@ Item {
         Node {
             id: orbitOrigin
             y: 100
-        }
-
-        ReflectionProbe {
-            id: reflectionProbe
-
-            position: Qt.vector3d(0, 37, 0)
-            boxSize: Qt.vector3d(200, 200, 500)
-            boxOffset: Qt.vector3d(0, -200, 0)
-
-            parallaxCorrection: true
-            quality: ReflectionProbe.Low
-            refreshMode: ReflectionProbe.EveryFrame
-            timeSlicing: ReflectionProbe.AllFacesAtOnce
-
-            debugView: true
         }
 
         PerspectiveCamera {

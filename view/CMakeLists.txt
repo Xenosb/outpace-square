@@ -26,5 +26,6 @@ qt6_add_qml_module(
     QML_FILES
         "App.qml"
         "CarView.ui.qml"
+        "ReflectionControls.qml"
         "Service.qml"
 )

@@ -20,4 +20,12 @@ ApplicationWindow {
 
         anchors.fill: parent
     }
+
+    ReflectionControls {
+        anchors.top: parent.top
+        anchors.right: parent.right
+        anchors.margins: 12
+
+        width: 260
+    }
 }

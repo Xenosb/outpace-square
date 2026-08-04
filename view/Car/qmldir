@@ -1,3 +1,5 @@
 module Car
 
 Car 1.0 Car.qml
+ReflectionCar 1.0 ReflectionCar.qml
+ReflectionFloor 1.0 ReflectionFloor.qml

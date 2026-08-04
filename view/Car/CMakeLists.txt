@@ -7,8 +7,13 @@ qt6_add_qml_module(
     RESOURCE_PREFIX "/qt/qml"
     QML_FILES
         "Car.qml"
+        "ReflectionCar.qml"
+        "ReflectionFloor.qml"
     RESOURCES
         "_importdata.json"
+        "shaders/reflectioncar.frag"
+        "shaders/reflectioncar.vert"
+        "shaders/reflectionfloor.frag"
         "maps/taillight_bump.png"
         "maps/door_panel_color.png"
         "maps/seat_color.png"
