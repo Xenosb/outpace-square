@@ -11,6 +11,8 @@ import Sky
 Item {
     id: carView
 
+    property alias view: view3D_Main
+
     SkyEnvironment {
         id: sceneEnvironment
 

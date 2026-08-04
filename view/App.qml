@@ -17,7 +17,7 @@ ApplicationWindow {
     Material.theme: EnvironmentProperties.dayNightMode ? Material.Dark : Material.Light
 
     CarView {
-        id: mainScreen
+        id: carView
 
         anchors.fill: parent
     }
@@ -37,8 +37,8 @@ ApplicationWindow {
         anchors.left: parent.left
         anchors.margins: 12
 
-        source: mainScreen.view
+        source: carView.view
 
-        visible: false
+        visible: true
     }
 }
