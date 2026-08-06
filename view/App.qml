@@ -4,6 +4,7 @@ import QtQuick.Controls.Material
 import QtQuick3D.Helpers
 
 import DataModel
+import Dock
 
 ApplicationWindow {
     id: window
@@ -39,6 +40,22 @@ ApplicationWindow {
 
         source: carView.view
 
-        visible: true
+        visible: false
+    }
+
+    Dock {
+        anchors.bottom: parent.bottom
+        anchors.left: parent.left
+        anchors.right: parent.right
+
+        Connections {
+            function onCarSettingsClicked() {
+                carView.controlsOpen = true
+            }
+
+            function onHomeClicked() {
+                carView.controlsOpen = false
+            }
+        }
     }
 }

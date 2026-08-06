@@ -12,6 +12,7 @@ Item {
     id: carView
 
     property alias view: view3D_Main
+    property alias controlsOpen: carControls.open
 
     SkyEnvironment {
         id: sceneEnvironment
@@ -121,7 +122,7 @@ Item {
         Node {
             id: sun
 
-            eulerRotation.x: EnvironmentProperties.dayNightMode ? -180 : -80
+            eulerRotation.x: -80 //EnvironmentProperties.dayNightMode ? -180 : -80
             eulerRotation.y: -55
 
             Behavior on eulerRotation.x {

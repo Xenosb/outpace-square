@@ -7,7 +7,7 @@ ExtendedSceneEnvironment {
     property Node skyLight
 
     backgroundMode: SceneEnvironment.SkyBox
-    ssrEnabled: true
+    // ssrEnabled: true
 
     lightProbe: Texture {
         source: "maps/morning_sky.jpg"

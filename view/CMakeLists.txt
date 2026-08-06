@@ -4,6 +4,7 @@ add_subdirectory(Car)
 add_subdirectory(CarControls)
 add_subdirectory(CarHitbox)
 add_subdirectory(DataModel)
+add_subdirectory(Dock)
 add_subdirectory(SelfieStick)
 add_subdirectory(Sky)
 
@@ -14,6 +15,7 @@ target_link_libraries(
         CarControls
         CarHitbox
         DataModel
+        Dock
         SelfieStick
         Sky
 )

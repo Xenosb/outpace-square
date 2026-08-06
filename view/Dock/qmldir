@@ -1,0 +1,6 @@
+module Dock
+
+Dock 1.0 Dock.qml
+DockIconButton 1.0 DockIconButton.qml
+ChevronButton 1.0 ChevronButton.qml
+TemperatureDisplay 1.0 TemperatureDisplay.qml
