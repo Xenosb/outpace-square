@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<VerificationPoint type="Visual" version="5">
+    <Description/>
+    <Verification object="outpace_Square_20_5_Text">
+        <visual>
+              
+            <ui version="1.0">
+                    
+                <execution>
+                          
+                    <state>
+                                
+                        <element class="QQuickText" id="19fd6f8f8ad" simplifiedType="Text">
+                                      
+                            <image type="PNG">iVBORw0KGgoAAAANSUhEUgAAAF4AAAAiCAIAAABZUPmDAAAACXBIWXMAAAsTAAALEwEAmpwYAAAJv0lEQVRogcVYeVAUZxZ/3dMzDMMcDMMlwiC3okgQVECNuAFRy7jgkUWNR2miJuomKTW6tckSoybG201ptNx47ZpEjaZwK1mPoEHFAxUPEIgcyjHCyAwMA3PQM93f/iHiHN1DD6J51UUN/b33e+/7fe/73vsaS89ajOAVCTdH7ofjpgVHdeKZ3gvx81LI7S1or+yQ83+Eu1B/OIU9Ybjjw6Uu0XsnL3MfsmD3QUJwV+miBr2S86a3QfaBbi8sCCdSekNS3xDbp8vjEox90GbE8azBhdKgIP8AGWFq0TQ0avUkd+ZwkY9/cKBCzjdr1M0qtd5Mu4qOo+A4D8cY3tOAEE3TvV5XDoo2Z42wX/rbsxekRwUIu2KhDI3X8o7uPFmmsbqGw6TR495fPCktQiroMkVmTfXZ77/bl99geIG0x3xT/rFpdqqMx6BEteZv/3LjVT1XLPuAvfrHTZwwIiFYaFbXXD578VJNh8VJiRcWkwgAuDzuvc8/eHdkgJjAABBFIQzHcIFEGTd8XIT59rWHLVY25/zQzEX/XJ0x1NeDhwEgmkKAYxgh8okZmTJaob56q7GbHcQeLKOIo8fOmxAh4+EMwrPUXykoqOvkjtYdcEjGwp2fZr8RGxwSFBgWNWhsRupgqrKwTPeMna4ICQQICP/xS+Zkhwsxuv3eqR925919pKeF/pHjZ81aMCbQNzH741n1Kw783s7gBvNJmpH7ToI/gQwPrx44+L9fyzVG8PAOipk8562cRIUyY16urm3lfyoNjEH2wBLPd0B/OQ5U4429h6/Vkw62lL7O3CMNyOknX5m2YuHwID5Y9arSSp0wNHqgrzRx5vz5FV/uKjU5nDXgGTl6aqI3jjqKD27/JK/+qUPycfmPWzerjKs+ywyMHJeR+vODM0+Qox9R1Iw5owYIkO720RVf5Nd0LaG1uab4wOcP7s7/aH22cuCkrMmXdhx95JywPYqXMtLPE0DfUFpw5d4TFh6Re6c3P2zUyEEioJ9c27DmwIVmCpPELt24fLoycNTr4YdK7nfYqOIAgtCkIUo+WBqu/vtcvd1C0PrrP5693Q4gC0+JkSIE3Q8gAIQFpmROGMBHbSX7dl+ocUht1FF85OCRCjN4RWZNGSRzJ/yuKXsookO8AKya2sY2ZOvc7uEI9uwR+PiJ+QCGhgcVGgoAUHtdcVUHAlys8PbEbBQBcEACCaarqq6tKKmuMzi6pVobHmisAB6+/mLH7pDnn5IWJQNr7W9nCtQ0QyBk/em8e80IDxiWnCC3dYqAZZ625IOsf6QvAWCordYw7BxHPJfPcyG1TXoSQBwWl9CPjwBweURyjBQDul2rMyE7MwJBe9HhnUWHWfgWePl48QCsZKfFcYmkynilECj1raI6g/1Q97GrKb9Tphs+1js0PsTzQqvJcW4uxatfaIgIwKyp1SChgE9ZrBanWs1RbMzImsIrJX8OS5InrNyxfmqt3qO/MkTCg866385XtdvDu7ooAGD+SWOS/TAg1XfKWij7Mc/A0FAxBh2N5SoTazOtq7vXYB4rl4aHefPumigWLSYh/CKC5TiAMGLepm3zAGgradBrH1y/ePxU4Q2VyalnQsCt+FkbCjbvCtn44ZgwT0XkQAUAgFV7+cD+w2V2qYlcU4P7JCycHe+DoZbi/NM1Fof5C2TeEgKs+mY1c/kBAADK0KwjAcTeCrEAwMSuaC8IQBQW5S8EAAAMwwCAx/eQKoKSJuUkjc+8fmTvFycrdRxbSkfCqKbLhxaVF45LHzFMKepUVxfmXyti4BoIRqoRAPADJiyZlR7AA2Pl8e9uNDmaYgKRJx+ANhttksEZy2LsIGnAhWIhH5ALahwtMfL+8a+X5eHP3YnlITHxEzISY33kI+cuz6W2/O0kh+rN4qhTW3X6aNVp1rABnl4UGEYwSdKcRcuSvXEw3f/pWN5D0kkDUVaKBsAIPoG5SGQcJ3AMgKZoqjsELnmPTE1VNU3274qLik6dOJO98oPlI7yH5eRMubntWB1rJ2rjqpdf0HAmXkRDcpbmZoV6Aq29fmzjiRojE5TFaCQR8ERiMeGi0vClEgEGtKndZGWoF24LMtb9tOtogRaBKDwzTSnsqd4x++uhinWp4E52wuisJetyoiQYkPUXt+66VE8+t7d1a2h6/KQTcFlQuA/THacLzC+ynyeAWa3SuWzpORXhp55pbdmvJToEfL9QfzHmku2ea7kronD7F6LY6Uu/mj9YjoO1+eb29T8UtiA2TKu2tqqFBmFgfLQUY4mCHxA+2J8A8sn96jbEGqlj4ccVQ6bPnb7o7Ymj+hOOSggAka1aIwUgkMjEOMd2xgURrPbPsREuSZz30aa5sXIc6NaSPeu+/UVFuvJsqL1SqqVB8tr4EWF8xjCEMWkpMZ5A1pfeUFmYc8C51UNAIfFrmZNm54zPDBdjDLMV+gWICQCL0eC6HWDfYvaILPPDn62vb9p7KzdMDxdjQLeV7Vu357hj5+8shtLzxbUW8Br4xuxUX55TFAJl6pyMYAGYyi4UVZo5LWmX6Bvuq8wAsoTxw0KcugsiOHFyvAygs66kRotckMxt57AnFw4A4Kmcunr1pxODhQB0a+mez3Z9/8DEBmfrvKP0zLeXNBRPkf7+4neSfATPkTFh/+FLV81I9sbIRxf3n1VxuFza+LCozp8ub0UgTZj2yfw4P5tdxVMMeXfltOESQK338y4+Jm2n5mJnuVwMNl3s9ezcmWtXLY7zwgAAqLbHKrWRoSE31+Zv2lFYTztgAuYd99cNy6YNEADqfFxy69KdmgazZMDA2DHJUf4CQB2V+3O3H6pgamg8fJMyUqNabuRdaWSogDy/zI/XrBntwwNkbCzPv3D3dw1SRMenvz4oRIQD1VLw9aa1Z9XuXueZ+GHljAAgpFKPZ98YebIgJeMt2Wj2ZERBupLda78hVy14K1YSNDT1L0NTu4esmpIDW/51pILh6oQAvOOzVi8ZFWCMMT/aelLl1Itam09v28Yjl374p36ifrFvzop9s3uos+nc3l2bOfCCuv9wFHtdAmHm6quX/lvhXMXtbCy6VjYgi/rON2v+fi5l3MwpI+OCZGLCom9W3Tx/7tiZkloDazOvf3jnamV0vPrmnWYWHbPq5y25Rb8kz5iWNirCV+6Fd7Y9Kb955cSJi7eaLQ5TcYMAzqrYmEnz3YVwZyF6Jz14eLFhrkbMdyg3XbxErpihX9ghl0OHsH/38hOCXXq1PThjuguKnn4279MQOI/0oaDe+OpJ2/WnLFcoryrBXPnp7Rgnf4TjC7fxX90eZOod+hrQ5jXBUv3/yEOHIYI+O3fdAPo/HU+NqirMWGUAAAAASUVORK5CYII=</image>
+                                      
+                            <superclass>
+                                            
+                                <class>QQuickImplicitSizeItem</class>
+                                            
+                                <class>QQuickItem</class>
+                                            
+                                <class>QObject</class>
+                                          
+                            </superclass>
+                                      
+                            <abstractProperties>
+                                            
+                                <visual isTopLevel="1"/>
+                                            
+                                <geometry isRelative="0">
+                                                  
+                                    <x>374</x>
+                                                  
+                                    <y>909</y>
+                                                  
+                                    <height>34</height>
+                                                  
+                                    <width>94</width>
+                                                
+                                </geometry>
+                                          
+                            </abstractProperties>
+                                      
+                            <properties>
+                                            
+                                <property name="implicitHeight">
+                                                  
+                                    <string>34</string>
+                                                
+                                </property>
+                                            
+                                <property name="topPadding">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="transformOrigin">
+                                                  
+                                    <string>4</string>
+                                                
+                                </property>
+                                            
+                                <property name="verticalAlignment">
+                                                  
+                                    <string>128</string>
+                                                
+                                </property>
+                                            
+                                <property name="text">
+                                                  
+                                    <string>20.5 °</string>
+                                                
+                                </property>
+                                            
+                                <property name="clip">
+                                                  
+                                    <string>false</string>
+                                                
+                                </property>
+                                            
+                                <property name="style">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="paintedHeight">
+                                                  
+                                    <string>34</string>
+                                                
+                                </property>
+                                            
+                                <property name="bottomPadding">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="hoveredLink"/>
+                                            
+                                <property name="renderTypeQuality">
+                                                  
+                                    <string>-1</string>
+                                                
+                                </property>
+                                            
+                                <property name="activeFocusOnTab">
+                                                  
+                                    <string>false</string>
+                                                
+                                </property>
+                                            
+                                <property name="renderType">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="minimumPixelSize">
+                                                  
+                                    <string>12</string>
+                                                
+                                </property>
+                                            
+                                <property name="smooth">
+                                                  
+                                    <string>true</string>
+                                                
+                                </property>
+                                            
+                                <property name="rightPadding">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="elide">
+                                                  
+                                    <string>3</string>
+                                                
+                                </property>
+                                            
+                                <property name="enabled">
+                                                  
+                                    <string>true</string>
+                                                
+                                </property>
+                                            
+                                <property name="fontSizeMode">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="opacity">
+                                                  
+                                    <string>1</string>
+                                                
+                                </property>
+                                            
+                                <property name="lineCount">
+                                                  
+                                    <string>1</string>
+                                                
+                                </property>
+                                            
+                                <property name="wrapMode">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="contentHeight">
+                                                  
+                                    <string>34</string>
+                                                
+                                </property>
+                                            
+                                <property name="truncated">
+                                                  
+                                    <string>false</string>
+                                                
+                                </property>
+                                            
+                                <property name="minimumPointSize">
+                                                  
+                                    <string>12</string>
+                                                
+                                </property>
+                                            
+                                <property name="z">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="antialiasing">
+                                                  
+                                    <string>true</string>
+                                                
+                                </property>
+                                            
+                                <property name="activeFocus">
+                                                  
+                                    <string>false</string>
+                                                
+                                </property>
+                                            
+                                <property name="implicitWidth">
+                                                  
+                                    <string>93.8594</string>
+                                                
+                                </property>
+                                            
+                                <property name="rotation">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="lineHeight">
+                                                  
+                                    <string>32</string>
+                                                
+                                </property>
+                                            
+                                <property name="scale">
+                                                  
+                                    <string>1</string>
+                                                
+                                </property>
+                                            
+                                <property name="paintedWidth">
+                                                  
+                                    <string>93.8594</string>
+                                                
+                                </property>
+                                            
+                                <property name="effectiveHorizontalAlignment">
+                                                  
+                                    <string>4</string>
+                                                
+                                </property>
+                                            
+                                <property name="lineHeightMode">
+                                                  
+                                    <string>1</string>
+                                                
+                                </property>
+                                            
+                                <property name="contentWidth">
+                                                  
+                                    <string>93.8594</string>
+                                                
+                                </property>
+                                            
+                                <property name="baselineOffset">
+                                                  
+                                    <string>26.5938</string>
+                                                
+                                </property>
+                                            
+                                <property name="horizontalAlignment">
+                                                  
+                                    <string>4</string>
+                                                
+                                </property>
+                                            
+                                <property name="leftPadding">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="state"/>
+                                            
+                                <property name="focusPolicy">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="textFormat">
+                                                  
+                                    <string>2</string>
+                                                
+                                </property>
+                                            
+                                <property name="padding">
+                                                  
+                                    <string>0</string>
+                                                
+                                </property>
+                                            
+                                <property name="maximumLineCount">
+                                                  
+                                    <string>2147483647</string>
+                                                
+                                </property>
+                                            
+                                <property name="focus">
+                                                  
+                                    <string>false</string>
+                                                
+                                </property>
+                                          
+                            </properties>
+                                      
+                            <identifyingProperties>
+                                            
+                                <property name="objectName"/>
+                                            
+                                <property name="id"/>
+                                          
+                            </identifyingProperties>
+                                    
+                        </element>
+                              
+                    </state>
+                        
+                </execution>
+                  
+            </ui>
+              
+            <check type="identifying"/>
+              
+            <check type="content">
+                    
+                <PropertyVerification element-id="19fd6f8f8ad">
+                          
+                    <VerifyProperty name="text" type="equal"/>
+                          
+                    <VerifyProperty name="enabled" type="equal"/>
+                        
+                </PropertyVerification>
+                  
+            </check>
+              
+            <check type="geometry">
+                    
+                <PropertyVerification element-id="19fd6f8f8ad">
+                          
+                    <VerifyProperty name="x" type="equal"/>
+                          
+                    <VerifyProperty name="y" type="equal"/>
+                          
+                    <VerifyProperty name="width" type="equal"/>
+                          
+                    <VerifyProperty name="height" type="equal"/>
+                        
+                </PropertyVerification>
+                  
+            </check>
+              
+            <check type="screenshot">
+                    
+                <PropertyVerification element-id="19fd6f8f8ad"/>
+                  
+            </check>
+            
+        </visual>
+    </Verification>
+</VerificationPoint>
