@@ -117,6 +117,8 @@ Item {
             eulerRotation.z: 0
             eulerRotation.y: -135
             eulerRotation.x: -5.69067
+
+            fieldOfView: 15
         }
 
         Node {
