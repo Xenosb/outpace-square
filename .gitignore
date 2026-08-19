@@ -41,3 +41,7 @@ qrc_*.h
 # Ignore IDE local configuration files
 **/local.properties
 *.env
+
+# Ignore python cache
+*/_pycache_
+*.pyc
